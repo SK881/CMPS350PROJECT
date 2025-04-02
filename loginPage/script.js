@@ -13,7 +13,7 @@ document.getElementById('loginForm').addEventListener('submit', async function(e
 
         if (user) {
             localStorage.setItem('loggedInUser', JSON.stringify(user));
-            document.location = '/mainPage/index.html';  // Redirect to main page (or wherever needed)
+            document.location = '/mainPage/index.html';  
         } else {
           
             document.getElementById('errorMsg').textContent = "Invalid username or password!";
